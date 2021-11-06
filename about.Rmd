@@ -6,6 +6,21 @@ output:
     toc_float: true
 ---
 
-# This page has information about me
+This page introduce Winnie's academic and professional experience
 
-I teach p8105.
+## Academic Experience
+
+**University of Wisconsin-Madison** 
+
+B.S. Degree in Genetics and Genomics (Sept. 2017 – Dec. 2020)
+
+**Columbia University**
+
+M.S. Degree in Biostatistics (Sept. 2021 - Now)
+
+## Professional Experience
+
+Internship for Onami Lab, RIKEN BDR, Kobe, Japan   
+
+Internship for Central Marketing Department, AstraZeneca, Shanghai, China 
+
