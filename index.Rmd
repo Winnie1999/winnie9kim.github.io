@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "Winnie's website"
 output: 
   html_document:
     toc: true
@@ -11,23 +11,15 @@ output:
 
 Hi! This is Yiqun Jin and you can call me Winnie! I'm a first year MS student in Biostatistics at Mailman School of Public Health at Columbia University. I'm so excited to having my first personal website. Hope you can learn more about me from this website!
 
-# Links to other websites
-
-Let's link to useful tools for data science:
-
-*[Google](https://www.google.com)
-*[P8105](https://p8105.com)
-
-# Local image
 
 Here's my picture
 
 ![](images/IMG_0472.jpeg)
 
 
-# Link to page within the site
+# Link to About me Page
 
-[About me](about.html)
+You can find more detailed information about me through this link [About me](about.html)
 
 ## Quarterly Results {.tabset}
 

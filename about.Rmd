@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-This page introduce Winnie's academic and professional experience
+This page introduce Winnie's academic and professional experience. Also, you can find my [Resume](Yiqun Jin's Curriculum Vitae.pdf)
 
 ## Academic Experience
 
