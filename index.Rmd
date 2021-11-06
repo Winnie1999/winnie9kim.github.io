@@ -9,7 +9,7 @@ output:
 
 # This is Winnie's awesome website
 
-Hi! This is Yiqun Jin and you can call me Winnie! I'm so excited to having my first personal website. Hope you can learn more about me from this website!
+Hi! This is Yiqun Jin and you can call me Winnie! I'm a first year MS student in Biostatistics at Mailman School of Public Health at Columbia University. I'm so excited to having my first personal website. Hope you can learn more about me from this website!
 
 # Links to other websites
 
@@ -22,7 +22,7 @@ Let's link to useful tools for data science:
 
 Here's my picture
 
-<img src = "images/IMG_0472.jpeg" style = "width:75%">
+![](images/IMG_0472.jpeg)
 
 
 # Link to page within the site
@@ -38,7 +38,3 @@ This is my first tab and i can do stuff
 ### By Region
  
 this is my second tab and it does other stuff
-
-## this is a new section
-
-and it's really great.
