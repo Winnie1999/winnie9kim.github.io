@@ -22,7 +22,7 @@ Let's link to useful tools for data science:
 
 Here's my picture
 
-<img src = "IMG_0472.jpeg" style = "width:75%">
+<img src = "images/IMG_0472.jpeg" style = "width:75%">
 
 
 # Link to page within the site
