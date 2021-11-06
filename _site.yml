@@ -1,0 +1,20 @@
+name: "My website"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - text: "Plotly"
+      href: plotly.html
+    - text: "Dashboard"
+      href: dashboard.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<yj2686@cumc.columbia.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/Winnie1999/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/yiqun-jin-3219301b4/
+output:
+  html_document:
+    theme: cerulean
