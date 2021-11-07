@@ -34,7 +34,7 @@ weather_df =
 
 # Plotly plots
 
-## Scatterplot for Maximum/Minimum temperature
+## Scatterplot for Max/Min temp
 
 ```{r}
 weather_df %>% 
@@ -43,7 +43,7 @@ weather_df %>%
     alpha = .5, type = "scatter", mode = "markers")
 ```
 
-## Violin plot for minimum temperature
+## Violin plot for min temp
 
 ```{r}
 weather_df %>% 
@@ -52,7 +52,7 @@ weather_df %>%
     type = "violin", colors = "viridis")
 ```
 
-## Histogram for maximum temperature
+## Histogram for max temp
 
 ```{r}
 weather_df %>% 
