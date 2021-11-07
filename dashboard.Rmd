@@ -7,61 +7,70 @@ output:
     source: embed
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
 
-```{r, include = FALSE}
-data("nyc_airbnb")
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>% 
-  select(neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>% 
-  filter(
-    neighbourhood_group == "Manhattan",
-    price %in% 100:500,
-    room_type == "Entire home/apt"
-  ) %>% 
-  drop_na(rating)
-nyc_airbnb
+```{r,include = FALSE}
+weather_df = 
+  rnoaa::meteo_pull_monitors(
+    c("USW00094728", "USC00519397", "USS0023B17S"),
+    var = c("PRCP", "TMIN", "TMAX"), 
+    date_min = "2017-01-01",
+    date_max = "2017-12-31") %>%
+  mutate(
+    name = recode(
+      id, 
+      USW00094728 = "CentralPark_NY", 
+      USC00519397 = "Waikiki_HA",
+      USS0023B17S = "Waterhole_WA"),
+    tmin = tmin / 10,
+    tmax = tmax / 10) %>%
+  select(name, id, everything())
+weather_df %>% 
+  count(tmax)
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Chart A - Scatterplot for Max/Min temperature
 
 ```{r}
-nyc_airbnb %>% 
-  mutate(text_label = str_c("Price: $", price, "\nRating: ", rating)) %>% 
-  plot_ly(
-    x = ~lat, y = ~long, color = ~price, text = ~text_label,
+weather_df %>% 
+  mutate(text_label = str_c("Minimum Temp: ", tmin, "\nMaximum Temp: ", tmax)) %>% 
+  plot_ly(x = ~tmin, y = ~tmax, color = ~name, text = ~text_label,
     alpha = .5, type = "scatter", mode = "markers")
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Chart B - Violin plot for min temperature
 
 ```{r}
-nyc_airbnb %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
+weather_df %>% 
   plot_ly(
-    y = ~price, x = ~neighbourhood, color = ~neighbourhood,
-    type = "box", colors = "viridis")
+    y = ~tmin, x = ~name, color = ~name,
+    type = "violin", colors = "viridis")
 ```
 
-### Chart C
+### Chart C - Histogram for max temperature
 
 ```{r}
-ggp_scatter = 
-  nyc_airbnb %>% 
-  ggplot(aes(x = lat, y = long, color = price)) +
-  geom_point()
+weather_df %>% 
+  plot_ly(x = ~tmax, color = ~name,
+          type = "histogram", colors = "viridis")
+```
 
-ggplotly(ggp_scatter)
+### Chart D - Box plot for precipitation
+
+```{r}
+weather_df %>% 
+  filter(prcp > 0) %>% 
+  plot_ly(y = ~prcp, x = ~name, color = ~name,
+          type = "box", colors = "viridis")
 ```

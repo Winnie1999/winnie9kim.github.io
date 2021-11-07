@@ -27,7 +27,7 @@ If you want to know more about my P8105 coursework, please visit my [Github](htt
 
 If you want to contact me, sent me email using the email icon on the top right.
 
-# NY NOAA Dashboard
+# Weather Data Dashboard
 
-This dashboard contains four plots introducing the NY NOAA data
+From NY NOAA data, we can get the precipitation, maximum/minimum temperature data for Central Park(NY), Waikiki(HA) and Waterhole(WA). This [dashboard](dashboard.html) contains four plots: scatter plot for Max/Min temperature, violin plot for minimum temperature, histogram for max temperature and box plot for precipitation.
 
