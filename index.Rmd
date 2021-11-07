@@ -1,5 +1,5 @@
 ---
-title: "Winnie's website"
+title: "Welcome to Winnie's website"
 output: 
   html_document:
     toc: true
@@ -7,7 +7,7 @@ output:
     theme: cerulean
 ---
 
-# This is Winnie's awesome website
+# Self Introduction
 
 Hi! This is Yiqun Jin and you can call me Winnie! I'm a first year MS student in Biostatistics at Mailman School of Public Health at Columbia University. I'm so excited to having my first personal website. Hope you can learn more about me from this website!
 
@@ -17,16 +17,17 @@ Here's my picture
 ![](images/IMG_0472.jpeg)
 
 
-# Link to About me Page
+# About me
 
-You can find more detailed information about me through this link [About me](about.html)
+You can find more detailed information about me through this link [About me](about.html) or visit my [LinkedIn](https://www.linkedin.com/in/yiqun-jin-3219301b4/) profile.
 
-## Quarterly Results {.tabset}
+If you want to know more about my P8105 coursework, please visit my [Github](https://github.com/Winnie1999).
 
-### By Product
+# Contact
 
-This is my first tab and i can do stuff
+If you want to contact me, sent me email using the email icon on the top right.
 
-### By Region
- 
-this is my second tab and it does other stuff
+# NY NOAA Dashboard
+
+This dashboard contains four plots introducing the NY NOAA data
+

@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-This page introduce Winnie's academic and professional experience. Also, you can find my [Resume](Yiqun Jin's Curriculum Vitae.pdf)
+This page introduce Winnie's academic and professional experience. Also, you can find my [Resume](Yiqun Jin's Curriculum Vitae.pdf) here.
 
 ## Academic Experience
 
@@ -20,7 +20,7 @@ M.S. Degree in Biostatistics (Sept. 2021 - Now)
 
 ## Professional Experience
 
-Internship for Onami Lab, RIKEN BDR, Kobe, Japan   
+Internship for Onami Lab, RIKEN BDR, Kobe, Japan (Jun. 2019 – Aug. 2019)  
 
-Internship for Central Marketing Department, AstraZeneca, Shanghai, China 
+Internship for Central Marketing Department, AstraZeneca, Shanghai, China (Apr. 2021 – Aug. 2021)
 
